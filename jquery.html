@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jquery</title>
+</head>
+
+<body>
+
+    <h1 id="monTitre">La différene entre le javascript et le jquery</h1>
+    <div id="maDiv">
+        <button id="login">javascipt</button>
+
+        <p id="par"><strong>le scripte:</strong>
+            let monTitre = document.getElementsByTagName("button")[0];
+            let loginMenu = document.getElementsByTagName("div")[0];
+            monTitre.addEventListener("click", () => {
+            if(loginMenu.style.visibility === "hidden"){
+            loginMenu.style.visibility = "visible";
+            } else {
+            loginMenu.style.visibility = "hidden";
+            }
+            });
+        </p>
+
+
+        <button id="login1">jquery</button>
+        <p id="text"><strong>le scripte:</strong>
+
+            $("h1").click(()=> {
+            $("div").toggle()
+            })
+
+    </div>
+
+
+    <script src="./js/jquery.js"></script>-
+    <script src="./jquery-3.5.1.min.js"></script>
+    <!--<script src="./js/javascipt.js"></script>-->
+
+</body>
+
+</html>

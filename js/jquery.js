@@ -1,0 +1,5 @@
+$("#monTitre").click(()=> {
+   $("#maDiv").toggle()
+});
+
+
